@@ -1,6 +1,17 @@
 .movie-list-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   padding: 2rem;
+}
+.movie-item-outer-container {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  transition: all ease-in-out 150ms;
+}
+.movie-item-outer-container:hover {
+  transform: scale(1.01);
 }

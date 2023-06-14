@@ -17,10 +17,10 @@ const Home = () => {
       <Search />
       <GenreButtons></GenreButtons>
       <FilterButtons></FilterButtons>
-      <h2>Suchergebnisse {movies.length}</h2>
+      <h2>Results {movies.length}</h2>
       <section className="movie-list-container">
         {movies.map((item, index) => (
-          <div key={index}>
+          <div className="movie-item-outer-container" key={index}>
             <Link to={`/home/moviedetails/${item.title}`}>
               <MovieItems
                 key={index}

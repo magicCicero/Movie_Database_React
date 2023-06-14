@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { MovieDataContext } from "../../context/Context";
+import "./GenreButtons.css";
 
 const GenreButtons = () => {
   const { movies, setMovies } = useContext(MovieDataContext);
@@ -25,7 +26,7 @@ const GenreButtons = () => {
   }, [genredMovies, setMovies]);
   return (
     <>
-      <section className="filter-container">
+      <section className="genre-container">
         {uniqueGenres.map((item, index) => (
           <button key={index} onClick={filterByGenre} value={item}>
             {item}

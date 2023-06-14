@@ -1,5 +1,5 @@
 import "./MovieDetails.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { useContext } from "react";
 import { MovieDataContext } from "../../context/Context";
@@ -15,12 +15,17 @@ const MovieDetails = () => {
 
   return (
     <>
-      <h1>{detailPage[0].title}</h1>
-      <h2>{detailPage[0].year}</h2>
-      <h3>{detailPage[0].director}</h3>
-      <h3>{detailPage[0].duration}</h3>
-      <h3>{detailPage[0].rate}</h3>
-      <p>{detailPage[0].genre}</p>
+      <section className="movie-details-container">
+        <h1>{detailPage[0].title}</h1>
+        <h2>{detailPage[0].year}</h2>
+        <h3>{detailPage[0].director}</h3>
+        <h3>{detailPage[0].duration}</h3>
+        <h3>{detailPage[0].rate}</h3>
+        <p>{detailPage[0].genre}</p>
+        <Link to="/home">
+          <button>BACK</button>
+        </Link>
+      </section>
     </>
   );
 };
