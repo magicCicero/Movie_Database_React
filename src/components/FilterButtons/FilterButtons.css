@@ -1,0 +1,12 @@
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.filter-container button {
+  padding: 1rem;
+  cursor: pointer;
+}
+.filter-container button:visited {
+  background-color: aqua;
+}

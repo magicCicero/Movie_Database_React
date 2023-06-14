@@ -1,0 +1,10 @@
+.movie-item {
+  background-color: grey;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: column;
+}
